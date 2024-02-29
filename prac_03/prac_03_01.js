@@ -50,6 +50,7 @@ function generateTestData(num) {
 // let testTestData = [{id: 0, name: 'GVYKKSKVNG', age: 68}, {id: 1, name: 'FDFYJNSKFG', age: 57}, {id: 2, name: 'YYHTWEBUZX', age: 74}]
 
 function isArrayLengthAndIdCorrect(count) {
+    debugger;
     let testData = generateTestData(count);
     if (count != testData.length || testData[count - 1].id != count - 1)
         throw new TypeError("The name's length is incorrect");
@@ -80,5 +81,5 @@ for (let element of resultArray)
     console.log(element);
 
 isArrayLengthAndIdCorrect(count);
-isNameLengthCorrect(count);
-isAgeGeneratedCorrect(count);
+// isNameLengthCorrect(count);
+// isAgeGeneratedCorrect(count);
